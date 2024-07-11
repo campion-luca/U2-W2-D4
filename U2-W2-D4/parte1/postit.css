@@ -1,0 +1,87 @@
+/* DO' LO STESSO FONT A TUTTA LA PAGINA */
+body {
+    font-family: 'Indie Flower', sans-serif;
+    margin: 100px 200px;
+}
+
+/* FORMATTAZIONE DEI POST IT */
+.postit {
+    background: linear-gradient(180deg, rgba(240, 240, 188, 1) 0%, rgb(131, 131, 131) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    box-shadow: 9px 8px 15px 0px rgba(0, 0, 0, 0.77);
+}
+
+.postit h2 {
+    font-size: 30px;
+    padding-bottom: 15px;
+    font-weight: 800;
+}
+
+.postit p {
+    font-size: 19px;
+}
+
+
+/* FORMATTAZIONE DELLA PAGINA GENERALE */
+.container {
+    display: flex;
+    width: 980px;
+    height: 600px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* SETTING ROTAZIONE SINGOLO POST IT */
+.task-1 {
+    transform: rotate(-5deg);
+}
+
+.task-2 {
+    transform: rotate(10deg);
+}
+
+.task-4 {
+    transform: rotate(-13deg);
+}
+
+.task-6 {
+    transform: rotate(-7deg);
+}
+
+.task-8 {
+    transform: rotate(-15deg);
+}
+
+/* SETTING ATTRIBUTO HOVER PER APPLICARE L ANIMAZIONE SOTTO DEFINITA */
+.task-1:hover,
+.task-2:hover,
+.task-3:hover,
+.task-4:hover,
+.task-5:hover,
+.task-6:hover,
+.task-7:hover,
+.task-8:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1.1);
+    box-shadow: 5px 5px 20px 7px #a5ff99;
+    transition: transform 0.3s linear;
+}
+
+
+
+/* SETTING ANIMAZIONE DI HOVER SU POST IT 
+@keyframes evidenzia {
+    0% {
+        box-shadow: 9px 8px 15px 0px rgba(0, 0, 0, 0.77);
+    }
+
+    100% {
+        box-shadow: 5px 5px 44px 12px #FF12C0;
+        rotate: (0deg);
+    }
+}   */
